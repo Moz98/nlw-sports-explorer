@@ -1,0 +1,74 @@
+/* TEMPORARIO */
+header{
+    display: none;
+}
+/* ------------- */
+body {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/2e8c8171044121.5bb77eb473593.jpg");
+    background-size:100% auto ;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #371061;
+}
+
+body * {
+    font-family:'Inter', sans-serif;
+    line-height: 160%;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+/* PÁGINA */
+
+.detail-container {
+    background: linear-gradient(90deg, #9572fc 0%, #43e7ad 50%, #e2d45c 100%);
+    border-radius: 4px;
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: #2a2634;
+    padding: 32px;
+    border-radius: 8px;
+    padding-top: 24px;
+    color: #ffffff;
+}
+
+.container__title {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.47px;
+}
+
+
+.container__desc {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.18px;
+    color: #a1a1a1;
+}
+
+.container__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+#section-games .container__img {
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#section-streamer .container__img {
+    width: 70px;
+    border-radius: 50%;
+}
