@@ -17,7 +17,7 @@ main {
   margin: auto;
   display: grid;
   gap: 24px;
-  margin-top: 32px;
+  margin-block: 32px;
 }
 
 /* HEADER */

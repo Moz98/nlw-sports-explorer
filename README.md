@@ -6,9 +6,13 @@ Projeto construído no evento Next Level Week da Rocketseat.
 
 ![Preview do Projeto](./.github/preview.png)
 
+---
+
 ## **OBJETIVO**
 
 Criar uma página onde se possa ver os seus jogos e streamers favoritos, além de poder compartilhar suas redes sociais.
+
+---
 
 ## **TECNOLOGIAS**
 
@@ -16,32 +20,39 @@ Criar uma página onde se possa ver os seus jogos e streamers favoritos, além d
 - CSS
 - Git e GitHub
 
+---
+
 ## **CRONOGRAMA**
 
-- Dia 01 - Base Building;
+- Dia 01 - [Base Building](#preview);
 
-  - Introdução do que será feito na semana
+  - [Introdução do que será feito na semana](#objetivo)
 
-- Dia 02 High Speed
+- Dia 02 - [High Speed](#html-hypertext-markup-language)
 
   - [HTML](#html-hypertext-markup-language)
   - [Tags Mencionadas na aula](#tags-mencionadas-na-aula)
-  - [Outras Tags]()
+  - [Outras Tags](#outras-tags)
 
-- Dia 03 - To be continued (CSS);
+- Dia 03 - [To be continued (CSS)](#css-cascading-style-sheets);
 
   - [CSS](#css-cascading-style-sheets)
   - [Reset](#reset)
   - [Display](#css-display)
 
-- [Dia 04 - Power UP]()
+- Dia 04 - [Power UP](#bem)
 
   - [BEM](#bem)
   - [CSS Animations](#css-animations)
   - [CSS Transitions](#css-transitions)
 
-- Dia 05 - Final Round
+- Dia 05 - [Final Round](#git)
   - [Git](#git)
+  - [Aprendizados](#aprendizados)
+  - [Próximos Passos](#próximos-passos)
+  - [Referências](#referências)
+
+---
 
 ## **HTML (HyperText Markup Language)**
 
@@ -51,7 +62,7 @@ Estrutra básica de construção WEB. É uma forma de marcação de texto utiliz
 
 São elementos HTML que servem para a marcação de texto, são utilziados pelos os leitores de tela, além de facilitar na organização do código.
 
-#### Tags mencionadas na aula
+#### **TAGS VISTAS NA AULA:**
 
 - <**html\> →** Representa a raiz de um documento HTML, todas as demais tags são derivadas desse elemento, ou seja, estão contidas dentro dele;
 - **<head\> →** Esta tag irá conter os elementos que serão lidos pela máquina através das meta tags, tais elementos ajudam a página a performar melhor no SEO;
@@ -66,6 +77,14 @@ São elementos HTML que servem para a marcação de texto, são utilziados pelos
   - **<p\> →** Conhecido como a _tag_ de parágrafo, é utilizada para agrupar conteúdos de texto;
   - **<a\> →** Tag de âncora, cria conexões tanta internas.
 
+#### **OUTRAS TAGS:**
+
+- **<picture\>** → Conhecido como um embutidor de elementos, serve para englobar uma imagem para que se possa ser trabalhado de maneira diferente;
+- **<address\>** → Utilizado para passar informações de contato e uma maior dinamicidade e interatividade com tais informações;
+- **<nav\>** → Muito útil para quando se trata de navegação, tem o propósito de informar para máquina que os elementos contidos dentro são para fins de navegação pela aplicação.
+
+---
+
 ## **CSS (Cascading Style Sheets)**
 
 Utilizado para a apresentação visual da página, onde se irá estilziar os elementos HTML
@@ -77,7 +96,7 @@ body{
 }
 ```
 
-### **Princípios**
+### **PRINCÍPIOS**
 
 - **Declaração →** Pedaço do código que irá ditar as propriedades e valores a serem aplicados em um elemento HTML;
 - **Seletores →** São valores de seleção, ou seja, qual elemento HTML será selecionado para estilização. Geralmente é utilizado o atributo _class_ do elemento para a seleção, mas nada impte que se utilize _tags_, _IDs_, ou outras propriedades:
@@ -87,7 +106,7 @@ body{
 - **Comentários →** Se encontra em "/_ /_", e são utilizados para ignorar certa parte do código e fazer anotações;
 - **Cascata →** Característica do CSS para a sua aplicação de estilos, onde a ordem e a espeficicade importam.
 
-### **Reset**
+### **RESET**
 
 Por default, as _tags_ do HTML já possuem alguns estilos de CSS pré-estabelecidos, o que pode vir a fazer o desenvolvedor perder o controle dos estilos. Por isso é comum realizar o reset das definições, onde se cria um file 'zerando' os estilos desejados.
 
@@ -99,21 +118,25 @@ Por default, as _tags_ do HTML já possuem alguns estilos de CSS pré-estabeleci
 }
 ```
 
-### **CSS Display**
+### **CSS DISPLAY**
 
 É uma propriedade que especifica a disposição da renderização do elemento em tela. Os principais _displays_ utilizaodos para o desenvolvimento são o Flexbox e Grid, mas existem diversos outros, que são utilizados muitas vezes de forma default por algumas _tags_, como o block, inline, e inline-block.
 
 ![Image do CSS Flebox e Grid](./.github/Layout-Image.jpg)
 
-## **Power Up**
+---
 
-### **BEM**
+## **B.E.M**
 
 Para facilitar o desenvolvimento e a manutenção do CSS em aplicações existem diversas metodologias e convenções, e uma delas é o BEM. Também conhecido como _Block Element Modifier_ (Bloco Elemento Modificador), consiste em dividir suas classes do HTML em três categorias, como o próprio nome menciona, blocos, elementos e modificadores.
 
 ![Image de demonstração do BEM](./.github/BEM-Image.png)
 
--**Bloco:** Unidade independente, uma parte mais geral, conglomerado de outros elementos ; -**Elemento:** Faz parte do bloco, pode ser visto como um elemento filho. Ele não possui um significado quando visto separadamente, só faz sentido em conjunto com outros elementos formando um bloco. Sua sintaxe é escrita com um double underline após o nome do bloco a qual o elemento pertence. ( \_\_element ); -**Modificador:** Vem em “adição” ao elemento, serve para mudar algum atributo de certo elemento.
+- **Bloco:** Unidade independente, uma parte mais geral, conglomerado de outros elementos ;
+
+- **Elemento:** Faz parte do bloco, pode ser visto como um elemento filho. Ele não possui um significado quando visto separadamente, só faz sentido em conjunto com outros elementos formando um bloco. Sua sintaxe é escrita com um double underline após o nome do bloco a qual o elemento pertence. ( \_\_element );
+
+- **Modificador:** Vem em “adição” ao elemento, serve para mudar algum atributo de certo elemento.
 
 ```CSS
 .block {
@@ -136,7 +159,7 @@ Para facilitar o desenvolvimento e a manutenção do CSS em aplicações existem
 }
 ```
 
-## CSS Animations
+## **CSS Animations**
 
 Torna possível a criação de animações via CSS, através da mudança de estilos de forma fluída. Consiste em dois parâmetros, um descrevendo os estilos e outro indicando os keyframes da animação.
 
@@ -165,12 +188,12 @@ Torna possível a criação de animações via CSS, através da mudança de esti
 }
 ```
 
-### **Vantagens**
+### **VANTAGENS**
 
 - Não há necessidade da utilização de JavaScript;
 - Melhor performance e eficiência na execução da animação;
 
-### **Configurações**
+### **CONFIGURAÇÕES**
 
 - **animation-delay:** O tempo em que o elemnto é carregado e o inicio da sequência de animação;
 - **animation-direction:** Define se a animação deve seguir o fluxo até o final da sequência ou voltar ao ponto inicial e se repetir;
@@ -181,7 +204,7 @@ Torna possível a criação de animações via CSS, através da mudança de esti
 - **animation-timing-function:** Configura a sincronização da animação, como ela transitar através dos keyframes;
 - **animation-fill-mode:** Configura que valores são aplicados pela animação antes e depois de se executar.
 
-## CSS Transitions
+## **CSS TRANSITIONS**
 
 As transições do CSS são recursos para dar uma maior vida as páginas webs, com elas podemos fazer diversas transições nos elementos HTML. Através das transições podemos controlar as mudanças de “estado” do CSS, tanto das propriedades, quanto das animações.
 
@@ -190,7 +213,9 @@ As transições do CSS são recursos para dar uma maior vida as páginas webs, c
 - **transition-timing-function:** Define como os valores intermediários das propriedades devem ser calculados;
 - **transition-delay:** Define por quanto tempo se deve esperar para que a transição comece a ocorrer.
 
-## Git
+---
+
+## **GIT**
 
 É um sistema de controle de versão distribuído, é através do Git que é possível salvar diversas versões das aplicações e sempre que necessário registrar e consultar o histórico, podendo editar qualquer tipo de arquivo. Existem diversas plataformas para salvar as versões do código remotamente, a mais famosa é o GitHub.
 
@@ -224,7 +249,9 @@ $ git clean
 - **config:** Maneira de configurar as opções do Git. Geralmente é usado somente uma vez após a instalação do Git;
 - **clean:** Remove diretórios que não estão rastreados do diretório de trabalho.
 
-## **Aprendizados**
+---
+
+## **APRENDIZADOS**
 
 - Tags HTML e Semântica;
 - CSS display;
@@ -233,12 +260,12 @@ $ git clean
 - BEM;
 - Git com CLI
 
-## **Próximos Passos**
+## **PRÓXIMOS PASSOS**
 
 - Criar um CRUD a partir do layout montado;
 - Utilizar API da [twitch](https://dev.twitch.tv/docs/api/)
 
-## **Referênicias**
+## **Referências**
 
 [Tags HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
 
